@@ -138,56 +138,6 @@ router.put('/api/contact', async (req, env) => {
   return json(result.contact, { headers: corsHeaders });
 });
 
-// Profile photo endpoint
-router.post('/api/profile/photo', async (req, env) => {
-  try {
-    const formData = await req.formData();
-    const file = formData.get('photo');
-
-    if (!file) {
-      return json({ error: 'No file uploaded' }, { status: 400, headers: corsHeaders });
-    }
-
-    const buffer = await file.arrayBuffer();
-    const filename = `profile-${Date.now()}.${file.name.split('.').pop()}`;
-
-    // Upload to R2
-    await env.BUCKET.put(`uploads/${filename}`, buffer, {
-      httpMetadata: {
-        contentType: file.type,
-      },
-    });
-
-    // Update profile with photo URL
-    const data = await readDb(env);
-    data.profile = data.profile || {};
-    data.profile.photo = `/uploads/${filename}`;
-    await writeDb(env, data);
-
-    return json({ photo: data.profile.photo }, { headers: corsHeaders });
-  } catch (error) {
-    return json({ error: error.message }, { status: 500, headers: corsHeaders });
-  }
-});
-
-// Serve uploaded files
-router.get('/uploads/:filename', async (req, env) => {
-  const { filename } = req.params;
-  try {
-    const object = await env.BUCKET.get(`uploads/${filename}`);
-    if (!object) {
-      return text('Not found', { status: 404 });
-    }
-    return new Response(object.body, {
-      headers: {
-        'Content-Type': object.httpMetadata?.contentType || 'application/octet-stream',
-      },
-    });
-  } catch (error) {
-    return text('Error', { status: 500 });
-  }
-});
-
 // Health check
 router.get('/health', () => json({ status: 'ok' }));
 

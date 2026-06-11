@@ -4,23 +4,10 @@ main = "server/src/index.js"
 compatibility_date = "2024-12-16"
 compatibility_flags = ["nodejs_compat"]
 
-[build]
-command = "npm install && npm --prefix client run build"
-
-[[site]]
-bucket = "./client/dist"
-include = ["client/dist/**/*"]
-exclude = []
-
 [[kv_namespaces]]
 binding = "DB"
 id = "your-kv-namespace-id"
 preview_id = "your-kv-preview-id"
-
-[[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "portfolio-uploads"
-preview_bucket_name = "portfolio-uploads-preview"
 
 [env.production]
 name = "portfolio-api-prod"
@@ -28,8 +15,4 @@ name = "portfolio-api-prod"
 [[env.production.kv_namespaces]]
 binding = "DB"
 id = "your-prod-kv-namespace-id"
-
-[[env.production.r2_buckets]]
-binding = "BUCKET"
-bucket_name = "portfolio-uploads-prod"
 
