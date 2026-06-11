@@ -8,7 +8,7 @@ const data = ref({
     name: "Aldi Pranata",
     role: "Full-Stack Developer",
     summary:
-      "Programmer who loves crafting clean, performant web experiences. Focused on PHP Framework / Native, Vue, Node.js, and modern tooling.",
+      "Programmer who loves learn something new, crafting clean, performant web experiences. Focused on PHP Framework / Native, JS, Node.js, and modern tooling.",
     location: "Indonesia",
     email: "aldyjrz@gmail.com",
   },
