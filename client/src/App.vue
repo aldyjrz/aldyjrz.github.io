@@ -35,7 +35,15 @@ const data = ref({
     "Git", "GitHub Actions", "Vite",
   ],
   experience: [
+   {
+      company: "PT. Multidaya Integra",
+      role: "Backend Developer",
+      period: "Jun 2020 - Des 2020",
+      details:
+        "Building backend using Javaspring boot for Dirjen Bea Cukai Indonesia. Maintaining and optimizing legacy projects.",
+    },
     {
+    
       company: "PT. Putraduta Buanasentosa",
       role: "Junior Programmer",
       period: "2021 – 2022",
@@ -52,7 +60,7 @@ const data = ref({
     {
       company: "Self-employed",
       role: "Freelance Full-Stack Developer",
-      period: "2017 – Present",
+      period: "Present",
       details:
         "Building web apps and APIs for clients. Specialising in Web Development.",
     },
