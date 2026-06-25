@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://aldyjrz.github.io/aldyjrz",
+  "homepage": "https://aldyjrz.github.io/aldyjrz/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
