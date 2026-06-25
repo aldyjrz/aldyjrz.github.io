@@ -10,7 +10,7 @@ const data = ref({
     role: "Programmer / Backend Developer",
     summary:
       "Programmer who loves crafting clean, performant web experiences. Focused on PHP Framework (Codeigniter / Laravel) / Native,  Node.js, and modern tooling.",
-    location: "Indonesia",
+    location: "Bekasi - Indonesia",
     email: "aldyjrz@gmail.com",
   },
   projects: [
@@ -55,8 +55,7 @@ const data = ref({
       company: "PT. Putraduta Buanasentosa",
       role: "Programmer",
       period: "2022 – 2026",
-      details:
-        "Building web and mobile apps. Maintaining and optimizing legacy projects. Specialising in PHP (CodeIgniter, Laravel).",
+      details:   "Technical Skills\n- PHP (Native PHP, CodeIgniter 3 & 4, Laravel)\n- MySQL, PostgreSQL, Microsoft SQL Server\n- JavaScript, jQuery, AJAX\n- REST API Development & Integration\n- React.js (Basic to Intermediate)\n- Express.js (Learning & Development)\n- Database Design & Optimization\n- Query Performance Tuning\n- Git & GitHub Version Control\n- Linux Server Administration\n- Apache & Nginx Web Server\n- cPanel Hosting Management\n- JSON, XML, and API Consumption\n- Reporting & Data Export (Excel/PDF)\n- System Troubleshooting & Maintenance\n\nResponsibilities at Indoarsip\n- Developed and maintained web-based archive management applications.\n- Designed and optimized database structures to support business processes and reporting requirements.\n- Created and enhanced modules for document storage, retrieval, tracking, and archive borrowing requests.\n- Developed REST API integrations with third-party systems and internal applications.\n- Generated operational and management reports using SQL queries and reporting tools.\n- Performed database optimization and query tuning to improve application performance.\n- Conducted bug fixing, troubleshooting, and application maintenance.\n- Collaborated with operational teams to gather requirements and implement system improvements.\n- Managed user access, permissions, and application security.\n- Assisted in deployment, server configuration, and production support activities.\n- Provided technical support and training to end users.\n- Created technical documentation and system documentation."
     },
     {
       company: "Self-employed",
@@ -149,6 +148,26 @@ onMounted(loadGithub);
             <span v-for="tech in project.tech" :key="tech">{{ tech }}</span>
           </div>
         </article>
+         <article class="card">
+          <div class="card-top">
+            <h4>GudangKu</h4>
+            <a href="https://selfstorage.co.id" target="_blank" rel="noreferrer" class="card-link">Visit ↗</a>
+          </div>
+          <p>Build GudangKu Website with Wordpress Elementor</p>
+          <div class="chips">
+            <span>PHP</span><span>Wordpress</span><span>Elementor</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <h4>Sayur Mini</h4>
+            <a href="https://sayurmini.co.id" target="_blank" rel="noreferrer" class="card-link">Visit ↗</a>
+          </div>
+          <p>Build Sayur Mini Website with Wordpress Elementor</p>
+          <div class="chips">
+            <span>PHP</span><span>Wordpress</span><span>Elementor</span>
+          </div>
+        </article>
 
         <!-- Private / NDA projects -->
         <article class="card card-private">
@@ -181,6 +200,37 @@ onMounted(loadGithub);
             <span>PHP</span><span>PHP</span><span>REST API</span>
           </div>
         </article>
+        <article class="card card-private">
+          <div class="card-top">
+            <h4>Indoarsip Shredder</h4>
+            <span class="badge-private">Private</span>
+          </div>
+          <p>Web-based application for managing archive destruction.</p>
+          <div class="chips">
+            <span>PHP</span><span>REST API</span>
+          </div>
+        </article>
+        <article class="card card-private">
+          <div class="card-top">
+            <h4>Indoarsip Lelang Mobile</h4>
+            <span class="badge-private">Private</span>
+          </div>
+          <p>Android-based application for Auction.</p>
+          <div class="chips">
+            <span>JAVA</span><span>PHP</span><span>REST API</span>
+          </div>
+        </article>
+        <article class="card card-private">
+          <div class="card-top">
+            <h4>Mitra Kerja</h4>
+            <span class="badge-private">Private</span>
+          </div>
+          <p>Developing Backend with ExpressJs.</p>
+          <div class="chips">
+            <span>NodeJS</span><span>REST API</span>
+          </div>
+        </article>
+       
       </div>
     </section>
 
@@ -209,7 +259,7 @@ onMounted(loadGithub);
           <div class="timeline-content">
             <h4>{{ item.role }}</h4>
             <p class="company">{{ item.company }} &bull; {{ item.period }}</p>
-            <p class="details">{{ item.details }}</p>
+            <p style='white-space: pre-line;' class="details">{{ item.details }}</p>
           </div>
         </div>
       </div>

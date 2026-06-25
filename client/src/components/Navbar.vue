@@ -19,7 +19,7 @@
 
         <!-- BUTTON CALL TO ACTION (PC Only) -->
         <div class="hidden md:flex items-center">
-          <a href="#" class="bg-emerald-500 hover:bg-emerald-600 text-gray-900 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-emerald-500/10">
+          <a href="mailto:aldyjrz@gmail.com" class="bg-emerald-500 hover:bg-emerald-600 text-gray-900 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-emerald-500/10">
             Hire Me
           </a>
         </div>
@@ -46,7 +46,7 @@
         <a href="#" class="block hover:bg-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md transition-colors">Services</a>
         <a href="mailto:aldyjrz@gmail.com" class="block hover:bg-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md transition-colors">Contact</a>
         <div class="pt-4 border-t border-gray-800 mt-2 px-3">
-          <a href="#" class="block w-full text-center bg-emerald-500 hover:bg-emerald-600 text-gray-900 font-semibold px-4 py-2 rounded-lg transition-all">
+          <a href="mailto:aldyjrz@gmail.com" class="block w-full text-center bg-emerald-500 hover:bg-emerald-600 text-gray-900 font-semibold px-4 py-2 rounded-lg transition-all">
             Hire Me
           </a>
         </div>
