@@ -1,4 +1,3 @@
-```yaml
 name: Deploy to Cloudflare Workers
 
 on:
@@ -53,4 +52,3 @@ jobs:
 
       - name: Deployment Status
         run: echo "✅ Successfully deployed to Cloudflare Workers!"
-```
