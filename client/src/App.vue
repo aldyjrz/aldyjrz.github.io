@@ -8,8 +8,8 @@ const data = ref({
     name: "Aldi Pranata",
     role: "Programmer / Backend Developer",
     summary:
-      "Programmer who loves learn something new, crafting clean, performant web experiences. Focused on PHP Framework / Native, JS, Node.js, and modern tooling.",
-    location: "Bekasi, Indonesia",
+      "Programmer who loves crafting clean, performant web experiences. Focused on PHP Framework / Native, Vue, Node.js, and modern tooling.",
+    location: "Indonesia",
     email: "aldyjrz@gmail.com",
   },
   projects: [
@@ -37,8 +37,15 @@ const data = ref({
   experience: [
     {
       company: "PT. Putraduta Buanasentosa",
+      role: "Junior Programmer",
+      period: "2021 – 2022",
+      details:
+        "Building web and mobile apps. Maintaining and optimizing legacy projects. Specialising in PHP (CodeIgniter, Laravel).",
+    },
+    {
+      company: "PT. Putraduta Buanasentosa",
       role: "Programmer",
-      period: "2021 – 2026",
+      period: "2022 – 2026",
       details:
         "Building web and mobile apps. Maintaining and optimizing legacy projects. Specialising in PHP (CodeIgniter, Laravel).",
     },
@@ -51,9 +58,9 @@ const data = ref({
     },
   ],
   contact: {
-    phone: "+62 812-0000-0000",
+    phone: "+62 821-2407-4627",
     email: "aldyjrz@gmail.com",
-    linkedin: "https://www.linkedin.com/in/aldi-pranata-1337elite/",
+    linkedin: "https://www.linkedin.com/in/aldytoi/",
     github: "https://github.com/aldyjrz",
   },
 });
