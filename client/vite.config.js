@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-
+import tailwindcss from '@tailwindcss/vite' // <-- Impor plugin ini
 // Deploy to: https://aldyjrz.github.io
 // Since this is deployed to the root of the custom domain (username.github.io),
 // base should be "/" (not a subdirectory).
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),
+    tailwindcss()// <-- Tambahkan di sini
+  ],
   base: "/",
   server: {
     port: 5173,

@@ -1,6 +1,7 @@
+ 
 <script setup>
 import { onMounted, ref } from "vue";
-
+import Navbar from './components/Navbar.vue'
 const githubUser = "aldyjrz";
 
 const data = ref({
@@ -98,6 +99,7 @@ onMounted(loadGithub);
 </script>
 
 <template>
+<Navbar/>
   <div class="page">
     <!-- Hero -->
     <header class="hero">
