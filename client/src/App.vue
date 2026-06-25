@@ -133,7 +133,7 @@ onMounted(loadGithub);
         <p>Selected projects and case studies.</p>
       </div>
       <p class="nda-note">
-        🔒 Several projects built during my time at PT. Putraduta Buanasentosa are not publicly listed
+      Several projects built during my time at PT. Putraduta Buanasentosa are not publicly listed
         due to company NDA and proprietary agreements.
       </p>
       <div class="grid">
