@@ -6,10 +6,10 @@ const githubUser = "aldyjrz";
 const data = ref({
   profile: {
     name: "Aldi Pranata",
-    role: "Full-Stack Developer",
+    role: "Programmer / Backend Developer",
     summary:
       "Programmer who loves learn something new, crafting clean, performant web experiences. Focused on PHP Framework / Native, JS, Node.js, and modern tooling.",
-    location: "Indonesia",
+    location: "Bekasi, Indonesia",
     email: "aldyjrz@gmail.com",
   },
   projects: [
@@ -25,7 +25,7 @@ const data = ref({
       description:
         "This portfolio — a dark-themed Vue 3 + Vite SPA deployed on GitHub Pages with live GitHub integration.",
       tech: ["Vue 3", "Vite", "GitHub Pages"],
-      link: "https://aldyjrz.github.io",
+      link: "https://aldytoi.my.id",
     },
   ],
   skills: [

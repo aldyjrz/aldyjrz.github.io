@@ -1,18 +1,1 @@
-name = "portfolio-api"
-type = "javascript"
-main = "server/src/index.js"
-compatibility_date = "2024-12-16"
-compatibility_flags = ["nodejs_compat"]
-
-[[kv_namespaces]]
-binding = "DB"
-id = "your-kv-namespace-id"
-preview_id = "your-kv-preview-id"
-
-[env.production]
-name = "portfolio-api-prod"
-
-[[env.production.kv_namespaces]]
-binding = "DB"
-id = "your-prod-kv-namespace-id"
-
+ 
