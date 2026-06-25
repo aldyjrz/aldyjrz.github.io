@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-clients",
+  "name": "portfolio-client",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -14,8 +14,9 @@
     "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.1",
     "@vitejs/plugin-vue": "^5.1.2",
+      "@tailwindcss/vite": "^4.3.1",
+
     "vite": "^5.4.2"
   }
 }
